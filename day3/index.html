@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge 1 | Day 3</title>
+    </head>
+
+    <body>
+        <main>
+            <h1>Fill out this form for Dillie-poo</h1>
+            <form action="POST">
+                <p>
+                    <label for="fullName">Full Name:</label><br>
+                    <input type="text" name="fullName" placeholder="Jonathan Joestar" required autofocus>
+                </p>
+
+                <p>
+                    <label for="comments">Comments:</label><br>
+                    <textarea name="comments" rows="5" cols="20" placeholder="Give me comments..." required></textarea>
+                </p>
+
+                <p>
+                    <label for="date">Date:</label><br>
+                    <input type="date" name="date" required>
+                </p>
+
+                <p>
+                    <label for="brands">Favorite Car Brand:</label><br>
+                    <input list="brands" name="brands">
+                    <datalist id="brands">
+                        <option value="Tesla"></option>
+                        <option value="Toyota"></option>
+                        <option value="Honda"></option>
+                        <option value="Other"></option>
+                    </datalist>
+                </p>
+                
+                <p><br><input type="submit" name="submit" value="Submit to Big Brother"></p>
+            </form>
+        </main>
+    </body>
+</html>
